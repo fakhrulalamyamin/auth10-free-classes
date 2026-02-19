@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Recitation - Season 10</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        islamic: {
+                            dark: '#064e3b', // Emerald 900
+                            primary: '#059669', // Emerald 600
+                            gold: '#d97706', // Amber 600
+                            light: '#f0fdf4', // Emerald 50
+                            accent: '#f59e0b' // Amber 500
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #059669; 
+            border-radius: 4px;
+        }
+        .pattern-bg {
+            background-color: #064e3b;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-islamic-light text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50 border-b-4 border-islamic-gold">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co.com/LdNp3TPC/Untitled-design-20260214-201746-0000.png" 
+                     alt="Taw Haa Zin Nurain Logo" 
+                     class="h-14 w-auto object-contain">
+                <span class="font-serif text-2xl font-bold text-islamic-dark hidden sm:block">Taw Haa Zin Nurain Online Madrasa</span>
+            </div>
+            
+            <a href="https://tawhaazinnurain.com/course/learn-quran/" class="bg-islamic-primary hover:bg-islamic-dark text-white px-6 py-2 rounded-full font-semibold transition duration-300 shadow-lg flex items-center gap-2 transform hover:scale-105">
+                <span>Join Now</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <section class="pattern-bg text-white py-20 px-4 text-center relative overflow-hidden">
+        <div class="container mx-auto relative z-10 max-w-4xl">
+            <span class="text-islamic-accent uppercase tracking-widest font-semibold text-sm mb-2 block">Season 10</span>
+            <h1 class="font-serif text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                Authentic Recitation of the <br/><span class="text-islamic-accent">Glorious Quran</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 font-light">
+                Watch Free Class & Elevate Your Recitation
+            </p>
+            <a href="https://tawhaazinnurain.com/course/learn-quran/" class="inline-block bg-islamic-gold hover:bg-amber-600 text-white font-bold py-3 px-10 rounded-full shadow-xl transition transform hover:-translate-y-1">
+                Join Now
+            </a>
+        </div>
+    </section>
+
+    <main class="flex-grow container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="font-serif text-3xl font-bold text-islamic-dark">Free Class Material</h2>
+            <div class="h-1 w-24 bg-islamic-gold mx-auto mt-2 rounded-full"></div>
+        </div>
+
+        <div id="class-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="col-span-full text-center py-10">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-islamic-primary"></div>
+                <p class="mt-2 text-gray-500">Loading classes...</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-gray-100 py-16 px-4">
+        <div class="container mx-auto max-w-5xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row items-center">
+            <div class="p-8 md:p-12 md:w-2/3">
+                <h3 class="font-serif text-2xl md:text-3xl font-bold text-islamic-dark mb-4">
+                    Ready to master your recitation?
+                </h3>
+                <p class="text-gray-600 mb-6">
+                    To explore the full course, join <strong class="text-islamic-primary">Authentic Recitation of The Glorious Quran (Season 10)</strong> today. Limited seats available.
+                </p>
+                <a href="https://tawhaazinnurain.com/course/learn-quran/" class="inline-block bg-islamic-dark hover:bg-black text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
+                    Join Now
+                </a>
+            </div>
+            <div class="h-48 md:h-auto md:w-1/3 w-full bg-islamic-primary flex items-center justify-center pattern-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-islamic-dark text-gray-300 py-8 border-t border-islamic-gold">
+        <div class="container mx-auto px-4 text-center">
+            <h4 class="font-serif text-xl text-white mb-4 font-bold">Taw Haa Zin Nurain Online Madrasa</h4>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
+                <a href="https://wa.me/8801740433580" target="_blank" class="flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-full transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.304-5.292c0-5.449 4.435-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    <span>01740433580</span>
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-500">&copy; 2026 Taw Haa Zin Nurain Online Madrasa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const container = document.getElementById('class-container');
+            const dataUrl = './classes.json'; // Ensure this matches your file name
+
+            fetch(dataUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    container.innerHTML = ''; // Clear loading spinner
+                    
+                    data.forEach(item => {
+                        // Create card element
+                        const card = document.createElement('div');
+                        card.className = 'bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col';
+
+                        // Check if youtubeId exists and is not empty
+                        let mediaContent = '';
+                        if (item.youtubeId && item.youtubeId.trim() !== '') {
+                            mediaContent = `
+                                <div class="relative pb-[56.25%] h-0 bg-gray-900 group">
+                                    <iframe 
+                                        class="absolute top-0 left-0 w-full h-full" 
+                                        src="https://www.youtube.com/embed/${item.youtubeId}" 
+                                        title="${item.title}" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            `;
+                        } else {
+                            // "Coming Soon" Placeholder
+                            mediaContent = `
+                                <div class="relative pb-[56.25%] h-0 bg-islamic-light flex items-center justify-center">
+                                    <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-islamic-primary/60">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <span class="text-xl font-serif font-bold">Coming Soon</span>
+                                    </div>
+                                </div>
+                            `;
+                        }
+
+                        // Assemble the HTML
+                        card.innerHTML = `
+                            ${mediaContent}
+                            <div class="p-6 flex-grow flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-serif text-xl font-bold text-islamic-dark mb-2">${item.title}</h3>
+                                    ${item.description ? `<p class="text-gray-600 text-sm">${item.description}</p>` : ''}
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-gray-100">
+                                    <a href="https://tawhaazinnurain.com/course/learn-quran/" class="text-sm font-semibold text-islamic-gold hover:text-islamic-primary flex items-center gap-1">
+                                        Get Full Access 
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        `;
+
+                        container.appendChild(card);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    container.innerHTML = `
+                        <div class="col-span-full text-center text-red-500 py-10">
+                            <p>Unable to load classes. Please ensure classes.json is available.</p>
+                        </div>
+                    `;
+                });
+        });
+    </script>
+</body>
+</html>
